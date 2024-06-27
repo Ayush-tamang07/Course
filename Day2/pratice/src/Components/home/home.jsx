@@ -5,7 +5,8 @@ function home() {
     <>
         <section>
             <div className="post-container">
-                <img src="" alt="" />
+                {/* <img src="https://placeholder.com/250" alt="image" /> */}
+                {/* <h1>hello</h1> */}
                 
             </div>
         </section>

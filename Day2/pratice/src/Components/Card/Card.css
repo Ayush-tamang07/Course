@@ -1,35 +1,52 @@
-header {
-    background-color: #ffeb3b; /* Bright yellow background */
-    padding: 20px 0; /* More padding for a larger header */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-nav {
+section {
     display: flex;
     justify-content: center;
-}
-
-.nav-container {
+  }
+  
+  .card-container {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
-
-.nav-container li {
-    margin: 0 20px; /* More space between items */
-}
-
-.nav-container li a {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    width: 60%; /* Adjusted width for responsiveness */
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin: 16px 0;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 16px 16px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card a {
     text-decoration: none;
-    color: #333; /* Dark text for contrast */
-    font-size: 20px; /* Larger font size */
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-}
+    color: inherit; /* Inherits parent color */
+    display: block; /* Ensures entire card area is clickable */
+  }
+  
 
-.nav-container li a:hover {
-    color: #f44336; /* Bright red on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
+  
+  
