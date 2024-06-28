@@ -4,7 +4,7 @@ import Form from '../Form/Form'
 function Register() {
   return (
     <>
-      <Form formType='register'/>
+      <Form props='register'/>
     </>
   );
 }

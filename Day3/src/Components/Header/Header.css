@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: red;
+    padding: 1rem;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.two-btn{
+    display: flex;
+    gap: 1rem;
+    /* margin-left: 10rem; */
+
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

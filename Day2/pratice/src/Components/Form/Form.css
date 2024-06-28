@@ -41,3 +41,7 @@ button:hover {
 input::placeholder {
     color: #999;
 }
+a{
+    color: blue;
+    text-decoration: none;
+}

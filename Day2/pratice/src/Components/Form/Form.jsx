@@ -1,18 +1,26 @@
 import React from "react";
 import "./Form.css";
+// import Button from "../Button/Button";
 
-function Form({ formType }) {
+function Form({ props}) {
   return (
     <>
       <div className="form">
         <div className="container">
-          <h2>{formType === "login" ? "Login" : "Register"}</h2>
+          <h2>{props === "login" ? "Login" : "Register"}</h2>
           <input type="text" placeholder="email" />
           <input type="text" placeholder="password" />
-          {formType === "register" && (
+          {props === "register" && (
             <input type="text" placeholder="conform password" />
           )}
-          <button>{formType === "login" ? "Login" : "Register"}</button>
+          {props === "login" && <a href="#">Forget Password?</a> }
+          {props === "register" && <a href="#">sign up</a> }
+
+
+          {/* <Button buttonType='login'/>
+          <Button buttonType='register'/>
+          <Button buttonType='logout'/> */}
+          <button>{props === "login" ? "Login" : "Register"}</button>
         </div>
       </div>
     </>
